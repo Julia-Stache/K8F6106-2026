@@ -1,0 +1,8 @@
+# Project Report
+This is a report from Julia.
+
+## Subheading
+This is where I will tell you about my data and results.
+
+### Make sure not to do this:
+Don't just put all your code in here. Display figures and main results, not the whole code.
