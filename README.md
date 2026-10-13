@@ -19,7 +19,12 @@ Imaginary Exclusion criteria:
 4) Menopause.
 5) Irregular menstrual cycles.
 
+Hypotheses:
+- H1: Depressive symptom severity differs significantly across menstrual-cycle phases.
+- H2: Serum estradiol concentrations are significantly associated with depressive symptom severity.
+
 References
+
  Hernández-Hernández, O. T., Martínez-Mota, L., Herrera-Pérez, J. J., & Jiménez-Rubio, G. (2019). Role of estradiol in the expression of genes involved in serotonin neurotransmission: Implications for female depression. Current Neuropharmacology, 17(5), 459–471. https://doi.org/10.2174/1570159X16666180628165107
    Läkemedelsverket. (2025). Depression, ångest och tvångssyndrom: Behandlingsrekommendation. https://www.lakemedelsverket.se/sv/behandling-och-forskrivning/behandlingsrekommendationer/sok-behandlingsrekommendationer/depression-angest-och-tvangssyndrom-behandlingsrekommendation/inledning
    Schmalenberger, K. M., Tauseef, H. A., Barone, J. C., Owens, S. A., Lieberman, L., Jarczok, M. N., Girdler, S. S., Kiesner, J., Ditzen, B., & Eisenlohr-Moul, T. A. (2021). How to study the menstrual cycle: Practical tools and recommendations. Psychoneuroendocrinology, 123, 104895. https://doi.org/10.1016/j.psyneuen.2020.104895
