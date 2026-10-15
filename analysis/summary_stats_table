@@ -23,7 +23,7 @@ participants$study_completed <- factor(
 )
 
 
-# Table 1: one row per participant (baseline characteristics)
+# Table 1: one row per participant (participant characteristics)
 baseline_char <- participants |>
   select(
     randomized_arm, age_years, depression_duration_months,
