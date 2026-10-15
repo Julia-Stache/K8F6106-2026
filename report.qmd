@@ -40,4 +40,4 @@ The study included 120 randomised participants, with 60 assigned to each group. 
 
 Baseline characteristics are presented in Table 1.
 
-![Table 1. Participant characteristics by randomized group](figures/table1.png)
+![Table 1. Participant characteristics by randomised group](figures/baseline_characteristics.html)
