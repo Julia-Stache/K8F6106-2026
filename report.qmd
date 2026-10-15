@@ -1,8 +1,43 @@
-# Project Report
-This is a report from Julia.
+---
+title: "Estradiol and SSRI treatment response"
+subtitle: "A simulated randomized controlled trial"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    embed-resources: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
 
-## Subheading
-This is where I will tell you about my data and results.
+# Introduction
 
-### Make sure not to do this:
-Don't just put all your code in here. Display figures and main results, not the whole code.
+Estradiol (E2), a major estrogen during the reproductive years, influences several components of serotonergic neurotransmission, including pathways involved in serotonin synthesis and signaling (Hernández-Hernández et al., 2019). Estradiol concentrations fluctuate across the menstrual cycle, raising the possibility that hormonal variation may be associated with differences in antidepressant response.
+
+This **entirely fictional** study examines whether circulating estradiol concentrations moderate the effect of selective serotonin reuptake inhibitor (SSRI) treatment on depressive symptom severity in premenopausal women with unipolar depression. All observations are simulated for coursework and must not be interpreted as clinical findings.
+
+# Methods
+
+## Study design
+
+A hypothetical, randomized, placebo-controlled trial enrolled **120 adult women**, randomly assigned to receive **sertraline (SSRI; n = 60)** or **placebo (n = 60)**. The planned follow-up period was approximately 12 weeks. Depressive symptoms, menstrual-cycle phase, and circulating estradiol concentrations were measured repeatedly during follow-up.
+
+## Participants
+
+Eligible participants were women aged 18–45 years with unipolar major depressive disorder and regular, naturally occurring menstrual cycles. Exclusion criteria included premenstrual dysphoric disorder (PMDD), premenstrual exacerbation (PME) of depression, pregnancy or breastfeeding, hormonal medication use, menopausal transition, and irregular menstrual cycles. This simulated study assumes that participants were appropriately screened before randomization.
+
+## Outcome measures
+
+The primary outcome was depressive symptom severity measured using the Montgomery–Åsberg Depression Rating Scale (MADRS). The Patient Health Questionnaire-9 (PHQ-9) provided a secondary self-reported measure. Estradiol concentrations and menstrual-cycle phase were recorded to investigate potential differences in treatment response across hormonal states.
+
+# Results
+
+## Participant characteristics
+
+The study included 120 randomised participants, with 60 assigned to each group. Table 1 summarises their characteristics. Continuous variables are reported as mean (standard deviation), and categorical variables as number (percentage).
+
+Baseline characteristics are presented in Table 1.
+
+![Table 1. Participant characteristics by randomized group](figures/table1.png)
