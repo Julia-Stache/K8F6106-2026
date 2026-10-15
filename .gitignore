@@ -23,6 +23,7 @@ credentials.json
 #Sensitive data (but not really) - ignore whole data folder
 notes.txt
 data/
+figures/
 
 #Super secret key
 .env

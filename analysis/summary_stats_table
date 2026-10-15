@@ -1,0 +1,82 @@
+#Table that displays summary statistics for both SSRI and placebo groups
+
+#Dependencies 
+library(dplyr)
+library(gtsummary)
+library(gt)
+
+#Load the cleaned data
+participants_clean <- read.csv("data/participants_clean.csv")
+
+# Make the two treatment groups appear in a consistent order
+participants_clean$randomized_arm <- factor(
+  participants_clean$randomized_arm,
+  levels = c("SSRI", "Placebo")
+)
+
+# Make simple binary variables easy to read
+participants$prior_antidepressant_use <- factor(
+  participants$prior_antidepressant_use, levels = c("No", "Yes")
+)
+participants$study_completed <- factor(
+  participants$study_completed, levels = c("No", "Yes")
+)
+
+
+# Table 1: one row per participant (baseline characteristics)
+baseline_char <- participants |>
+  select(
+    randomized_arm, age_years, depression_duration_months,
+    baseline_madrs, baseline_phq9, cycle_length_days,
+    prior_antidepressant_use, psychotherapy, study_completed
+  ) |>
+  tbl_summary(
+    by = randomized_arm,
+    type = list(
+      c(age_years, depression_duration_months, baseline_madrs,
+        baseline_phq9, cycle_length_days) ~ "continuous",
+      c(prior_antidepressant_use, study_completed) ~ "categorical"
+    ),
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} ({p}%)"
+    ),
+    digits = all_continuous() ~ 1,
+    label = list(
+      age_years ~ "Age, years",
+      depression_duration_months ~ "Depression duration, months",
+      baseline_madrs ~ "Baseline MADRS score",
+      baseline_phq9 ~ "Baseline PHQ-9 score",
+      cycle_length_days ~ "Menstrual-cycle length, days",
+      prior_antidepressant_use ~ "Previous antidepressant use",
+      psychotherapy ~ "Psychotherapy",
+      study_completed ~ "Completed study"
+    ),
+    missing = "no"
+  ) |>
+  modify_caption("**Table 1. Participant characteristics by randomised group**") |>
+  bold_labels() |>
+  modify_footnote_body(
+    footnote = "One participant in the SSRI group of unknown age.",
+    columns = label,
+    rows = variable == "age_years" & row_type == "label"
+  )
+
+# Make the table pink (important)
+baseline_char <- baseline_char |>
+  as_gt() |>
+  gt::tab_style(
+    style = gt::cell_text(color = "#D87093"),
+    locations = list(
+      gt::cells_body(),
+      gt::cells_column_labels(),
+      gt::cells_title(),
+      gt::cells_footnotes()
+    )
+  )
+
+# Show table
+print(baseline_char)
+
+#Save table to figure folder
+gt::gtsave(baseline_char, "figures/baseline_characteristics.html")

@@ -27,7 +27,6 @@ assessments$phase[
 print(table(assessments$phase)) 
 
 #Missing values
-
 missing_ass <- data.frame(
   Variable = names(assessments),
   Missing = colSums(is.na(assessments))
@@ -67,7 +66,7 @@ assessments$estradiol_pg_ml[
 
 summary(assessments$estradiol_pg_ml)
 
-# Summarise cleaned data
+## Summarise cleaned data
 # Age by treatment group
 print(aggregate(age_years ~ randomized_arm,
                 data = participants, FUN = mean))
@@ -83,7 +82,7 @@ print(aggregate(madrs ~ phase,
 # Missing values after cleaning
 print(colSums(is.na(assessments)))
 
-#Save cleaned data
+##Save cleaned data
 write.csv(participants,
           "data/participants_clean.csv",
           row.names = FALSE)
