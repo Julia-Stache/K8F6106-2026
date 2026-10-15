@@ -1,0 +1,8 @@
+# This is a script to clean my raw data
+
+#Dependencies
+import pandas as pd
+
+#Load raw data files
+raw_data_participants = pd.read_csv('../data/ssri_rct_participants.csv')
+raw_data_assessments = pd.read_csv('../data/ssri_rct_repeated_assessments.csv')

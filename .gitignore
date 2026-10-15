@@ -20,8 +20,9 @@ __pycache__/
 *.key
 credentials.json
 
-#Sensitive data (but not really)
+#Sensitive data (but not really) - ignore whole data folder
 notes.txt
+data/
 
 #Super secret key
 .env
