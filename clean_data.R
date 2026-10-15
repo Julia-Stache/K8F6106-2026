@@ -83,7 +83,7 @@ print(aggregate(madrs ~ phase,
 # Missing values after cleaning
 print(colSums(is.na(assessments)))
 
-# 6. SAVE CLEANED DATA
+#Save cleaned data
 write.csv(participants,
           "data/participants_clean.csv",
           row.names = FALSE)
