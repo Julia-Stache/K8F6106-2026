@@ -1,7 +1,7 @@
 # K8F6106-2026
 This is my repo for the course Open Science in Practice: Collaborative Research with Git.
 
-For this course, I used ChatGPT to generate an imaginary dataset to investigate how drug effectiveness may fluctuate across the menstrual cycle in menstruating women with unipolar depression. Unfortunately, I ended up spending a lot of time on intricate study designs and formulating hypotheses, leaving little time to focus on learning how to use github. I ended up settling for a much more basic imaginary study design using my already generated data to leave just enough room to fight with pull requests. 
+For this course, I used ChatGPT to generate an imaginary dataset to investigate how drug effectiveness may fluctuate across the menstrual cycle in adult women with unipolar depression. Unfortunately, I ended up spending a lot of time on intricate study designs and formulating hypotheses, leaving little time to focus on learning how to use github. I ended up settling for a much more basic imaginary study design using my already generated data to leave just enough room to fight with pull requests. 
 
 *Overview of the repository*
 
