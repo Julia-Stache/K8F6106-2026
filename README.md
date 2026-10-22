@@ -12,27 +12,51 @@ The repository is organised as follows:
 ```text
 K8F6106-2026/
 │
-├── analysis/                         # Data processing and analysis
+├── analysis/                            # Data processing and analysis
 │   │
-│   ├── DEPENDENCIES.md               # Required software and R packages
-│   ├── clean_data.R                  # Data cleaning
-│   ├── joined_datasets.R             # Combining datasets
-│   ├── main_analysis.R               # Main statistical analysis
-│   ├── main_analysis_figures.R       # Visualisation of results
-│   ├── summary_stats_table           # Summary statistics
+│   ├── DEPENDENCIES.md                  # Required software and R packages -> READ THIS B4 RUNNING THE ANALYSIS
 │   │
-│   └── menstrualcycle_MADRS/         # Menstrual-cycle analyses
-│       ├── menstrualcycle_MADRS_lmer.R
-│       ├── menstrualcycle_MADRS_pairwise.R
-│       └── menstrualcycle_MADRS_figure.R
+│   ├── prep_data_for_analysis/          # Data preparation
+│   │   ├── clean_data.R                 # Data cleaning
+│   │   └── joined_datasets.R           # Combining cleaned datasets
+│   │
+│   ├── MADRS_PHQ9_over_time/            # Main outcome analyses
+│   │   ├── MADRS_over_time_groups.R     # MADRS analysis by treatment group
+│   │   ├── MADRS_over_time_groups_figures.R
+│   │   │                                 # MADRS visualisations
+│   │   ├── PHQ9_over_time_groups.R      # PHQ-9 analysis by treatment group
+│   │   ├── PHQ9_over_time_groups_figure.R
+│   │   │                                 # PHQ-9 visualisations
+│   │   └── arrange_figures_MADRS_PHQ9.R
+│   │                                     # Combined MADRS and PHQ-9 figures
+│   │
+│   └── additional_analysis/             # Additional analyses
+│       ├── MADRS_PHQ9_over_time_figures.R
+│       │                                 # Additional outcome visualisations
+│       ├── MADRS_PHQ9_over_time_table.R
+│       │                                 # Outcome summary tables
+│       │
+│       ├── estradiol_treatment_interaction/
+│       │   ├── estradiol_treatment_lmer.R
+│       │   │                             # Mixed-effects interaction analysis
+│       │   └── estradiol_treatment_figure.R
+│       │                                 # Interaction visualisation
+│       │
+│       └── menstrualcycle_MADRS/
+│           ├── menstrualcycle_MADRS_lmer.R
+│           │                             # Menstrual-cycle mixed-effects model
+│           ├── menstrualcycle_MADRS_pairwise.R
+│           │                             # Pairwise comparisons
+│           └── menstrualcycle_MADRS_figure.R
+│                                         # Menstrual-cycle visualisation
 │
-├── report/                           # Research report
-│   ├── report.qmd                     # Quarto source file
-│   └── report.html                    # Rendered HTML report
+├── report/                              # Research report
+│   ├── report.qmd                       # Quarto source file
+│   └── report.html                      # Rendered HTML report
 │
-├── .gitignore                        # Files ignored by Git
-├── README.md                         # Project documentation
-└── flowchart.drawio                   # Project flowchart
+├── .gitignore                           # Files excluded from version control
+├── README.md                            # Project overview and documentation
+└── flowchart.drawio                     # Project flowchart
 ```
 
 **Note:** The `data/` folder contains the simulated datasets used in the analyses but is excluded from version control using `.gitignore`.
