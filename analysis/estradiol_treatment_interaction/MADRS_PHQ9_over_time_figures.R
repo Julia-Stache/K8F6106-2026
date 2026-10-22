@@ -2,6 +2,7 @@
 # Visualisation of depressive symptoms over time
 # ===============================================
 
+# 1. Plot MADRS scores over time
 plot_madrs <- ggplot(summary_table,
                      aes(x = visit_period, y = mean_madrs,
                          group = randomized_arm, color = randomized_arm)) +
@@ -16,6 +17,7 @@ dir.create("figures", showWarnings = FALSE)
 ggsave("figures/madrs_over_time.png", plot_madrs,
        width = 7, height = 4.5, dpi = 300)
 
+# 2. Plot PHQ9 scores over time
 plot_phq9 <- ggplot(summary_table,
                      aes(x = visit_period, y = mean_phq9,
                          group = randomized_arm, color = randomized_arm)) +
