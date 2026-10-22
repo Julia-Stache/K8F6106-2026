@@ -1,43 +1,38 @@
 # K8F6106-2026
 This is my repo for the course Open Science in Practice: Collaborative Research with Git.
 
-For this course, I used ChatGPT to generate an imaginary dataset to investigate the following research question: 'Does menstrual-cycle phase alter the effectiveness of SSRI medication in adult women suffering from unipolar depression?'
+For this course, I used ChatGPT to generate an imaginary dataset to investigate how drug effectiveness may fluctuate across the menstrual cycle in adult women with unipolar depression. Unfortunately, I ended up spending a lot of time on intricate study designs and formulating hypotheses, leaving little time to focus on learning how to use github. I ended up settling for a much more basic imaginary study design using my already generated data to leave just enough room to fight with pull requests. 
 
-##Overview of the repository
-        [I would suggest adding here an overview of what is contained in each folder and file in your directory. Example:
-        
-        -data
-         |_ [file] -- information about file contents
-        -analysis
-         |_ [script-a] -- information about script a
-         |_ [script-b] -- information about script b
-        
-        /Julie  ]
+*Overview of the repository*
 
-##Background
-Some studies have suggested that sex hormones may play an important role in antidepressant treatment effectiveness (Hernández-Hernández et al., 2019). Estrogen levels fluctuate throughout the menstrual cycle, reaching a peak shortly before ovulation, followed by a decrease and a second, smaller rise during the luteal phase (Schmalenberger et al., 2021). Estradiol (E2), the most prevalent and potent form of estrogen during the reproductive years, is known to influence several components of the serotonergic system, including serotonin synthesis, degradation, and transporter expression (Hernández-Hernández et al., 2019). Selective serotonin reuptake inhibitors (SSRIs) are commonly used as first-line pharmacological treatments for unipolar depression (Läkemedelsverket, 2025). However, relatively little is known about whether their effectiveness varies across menstrual-cycle phases.
+This repository contains R scripts for data cleaning, statistical analysis, and visualisation of simulated data from a fictional study investigating antidepressant treatment effectiveness.
 
-##Methods
-This imaginary study collected simulated data from 120 adult women diagnosed with unipolar depression to investigate the relationship between menstrual-cycle phase and SSRI treatment effectiveness.
+The repository is organised as follows:
 
-###Imaginary Inclusion criteria:
-1) Women aged 18–45 years.
-2) Treatment with an SSRI for at least 12 weeks prior to study enrollment.
-3) Formal diagnosis of unipolar depression.
+```text
+K8F6106-2026/
+│
+├── analysis/                         # Data processing and analysis
+│   │
+│   ├── DEPENDENCIES.md               # Required software and R packages
+│   ├── clean_data.R                  # Data cleaning
+│   ├── joined_datasets.R             # Combining datasets
+│   ├── main_analysis.R               # Main statistical analysis
+│   ├── main_analysis_figures.R       # Visualisation of results
+│   ├── summary_stats_table           # Summary statistics
+│   │
+│   └── menstrualcycle_MADRS/         # Menstrual-cycle analyses
+│       ├── menstrualcycle_MADRS_lmer.R
+│       ├── menstrualcycle_MADRS_pairwise.R
+│       └── menstrualcycle_MADRS_figure.R
+│
+├── report/                           # Research report
+│   ├── report.qmd                     # Quarto source file
+│   └── report.html                    # Rendered HTML report
+│
+├── .gitignore                        # Files ignored by Git
+├── README.md                         # Project documentation
+└── flowchart.drawio                   # Project flowchart
+```
 
-###Imaginary Exclusion criteria:
-1) Conditions associated with premenstrual worsening of depressive symptoms, including premenstrual dysphoric disorder (PMDD) and premenstrual exacerbation (PME) of depression.
-2) Pregnancy or breastfeeding.
-3) Use of hormonal contraceptives or other medications that influence reproductive hormone levels.
-4) Menopause.
-5) Irregular menstrual cycles.
-
-##Hypotheses:
-- H1: Depressive symptom severity differs significantly across menstrual-cycle phases.
-- H2: Serum estradiol concentrations are significantly associated with depressive symptom severity.
-
-References
-
- Hernández-Hernández, O. T., Martínez-Mota, L., Herrera-Pérez, J. J., & Jiménez-Rubio, G. (2019). Role of estradiol in the expression of genes involved in serotonin neurotransmission: Implications for female depression. Current Neuropharmacology, 17(5), 459–471. https://doi.org/10.2174/1570159X16666180628165107
-   Läkemedelsverket. (2025). Depression, ångest och tvångssyndrom: Behandlingsrekommendation. https://www.lakemedelsverket.se/sv/behandling-och-forskrivning/behandlingsrekommendationer/sok-behandlingsrekommendationer/depression-angest-och-tvangssyndrom-behandlingsrekommendation/inledning
-   Schmalenberger, K. M., Tauseef, H. A., Barone, J. C., Owens, S. A., Lieberman, L., Jarczok, M. N., Girdler, S. S., Kiesner, J., Ditzen, B., & Eisenlohr-Moul, T. A. (2021). How to study the menstrual cycle: Practical tools and recommendations. Psychoneuroendocrinology, 123, 104895. https://doi.org/10.1016/j.psyneuen.2020.104895
+**Note:** The `data/` folder contains the simulated datasets used in the analyses but is excluded from version control using `.gitignore`.
