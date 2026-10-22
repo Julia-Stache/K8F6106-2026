@@ -59,6 +59,7 @@ K8F6106-2026/
 └── flowchart.drawio                     # Project flowchart
 ```
 *Guide to using the repository*
+```text
 How to use:
     1. Request my simulated data
     2. Go to the analysis folder -> prep_data_for_analysis
@@ -68,5 +69,6 @@ How to use:
     3. Inside the folder, run the clean_data.R script first.
     4. After running the clean_data.R script, run the joined_datasets.R script
     5. Run any of the other analysis scripts.
+```
 
 **Note:** The `data/` folder contains the simulated datasets used in the analyses but is excluded from version control using `.gitignore`.
