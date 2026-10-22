@@ -9,7 +9,7 @@ assessments <- read.csv("data/assessments_clean.csv")
 # 2. Join baseline depression severity to repeated measurements
 repeated_measurements_data <- assessments |>
   left_join(
-    participants |> select(participant_id, baseline_madrs),
+    participants |> select(participant_id, baseline_madrs, baseline_phq9),
     by = "participant_id"
   ) |>
   mutate(
