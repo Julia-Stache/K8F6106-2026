@@ -7,12 +7,12 @@
 estradiol_predictions <- expand.grid(
   randomized_arm = c("Placebo", "SSRI"),
   e2_100 = seq(
-    min(study$e2_100, na.rm = TRUE),
-    max(study$e2_100, na.rm = TRUE),
+    min(repeated_measurements_data$e2_100, na.rm = TRUE),
+    max(repeated_measurements_data$e2_100, na.rm = TRUE),
     length.out = 100
   ),
-  week_since_randomization = mean(study$week_since_randomization),
-  baseline_madrs = mean(study$baseline_madrs)
+  week_since_randomization = mean(repeated_measurements_data$week_since_randomization),
+  baseline_madrs = mean(repeated_measurements_data$baseline_madrs)
 )
 
 # Calculate predicted MADRS scores
