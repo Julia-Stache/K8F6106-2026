@@ -17,6 +17,8 @@ The following R packages are required:
 | `dplyr` | Data manipulation and preparation |
 | `gtsummary` | Creating summary statistics tables |
 | `gt` | Formatting and exporting tables |
+| `emmans` | Formatting and exporting tables |
+
 
 Base R is used for importing CSV files and performing data cleaning. No additional packages are required for the data-cleaning script.
 
