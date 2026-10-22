@@ -5,7 +5,7 @@ For this course, I used ChatGPT to generate an imaginary dataset to investigate 
 
 *Overview of the repository*
 
-This repository contains R scripts for data cleaning, statistical analysis, and visualisation of simulated data from a fictional study investigating antidepressant treatment effectiveness.
+This repository contains R scripts for data cleaning, statistical analysis, and visualisation of simulated data from a fictional study investigating antidepressant treatment effectiveness. The dataset was not generated using a single prompt but through an ongoing back and forth with ChatGPT. Therefore, I'm unable to provide a prompt or seed for the dataset. 
 
 The repository is organised as follows:
 
@@ -58,5 +58,15 @@ K8F6106-2026/
 ├── README.md                            # Project overview and documentation
 └── flowchart.drawio                     # Project flowchart
 ```
-
+*Overview of the repository*
+How to use:
+    1. Request my simulated data
+    2. Go to the analysis folder -> prep_data_for_analysis
+    3. READ THE DEPENDENCIES.md file
+    4. Install missing libraries (if applicable)
+    5. Load required R packages.
+    3. Inside the folder, run the clean_data.R script first.
+    4. After running the clean_data.R script, run the joined_datasets.R script
+    5. Run any of the other analysis scripts.
+    
 **Note:** The `data/` folder contains the simulated datasets used in the analyses but is excluded from version control using `.gitignore`.
