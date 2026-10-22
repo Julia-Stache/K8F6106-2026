@@ -1,7 +1,7 @@
 
-# ==========================================
-# Estradiol x treatment interaction
-# ==========================================
+# ===============================================
+# Estradiol x treatment interaction Visualisation 
+# ===============================================
 
 # Create data for model predictions
 estradiol_predictions <- expand.grid(
