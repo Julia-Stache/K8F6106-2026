@@ -1,6 +1,6 @@
 ---
 title: "Estradiol and SSRI treatment response"
-subtitle: "A simulated randomized controlled trial"
+subtitle: "A simulated randomised controlled trial"
 format:
   html:
     toc: true
@@ -16,13 +16,13 @@ execute:
 
 Estradiol (E2), a major estrogen during the reproductive years, influences several components of serotonergic neurotransmission, including pathways involved in serotonin synthesis and signaling (Hernández-Hernández et al., 2019). Estradiol concentrations fluctuate across the menstrual cycle, raising the possibility that hormonal variation may be associated with differences in antidepressant response.
 
-This **entirely fictional** study examines whether circulating estradiol concentrations moderate the effect of selective serotonin reuptake inhibitor (SSRI) treatment on depressive symptom severity in premenopausal women with unipolar depression. All observations are simulated for coursework and must not be interpreted as clinical findings.
+This **completely totally super fictional** study examines whether circulating estradiol concentrations moderate the effect of selective serotonin reuptake inhibitor (SSRI) treatment on depressive symptom severity in premenopausal women with unipolar depression. All observations are simulated for coursework and must not be interpreted as clinical findings.
 
 # Methods
 
 ## Study design
 
-A hypothetical, randomized, placebo-controlled trial enrolled **120 adult women**, randomly assigned to receive **sertraline (SSRI; n = 60)** or **placebo (n = 60)**. The planned follow-up period was approximately 12 weeks. Depressive symptoms, menstrual-cycle phase, and circulating estradiol concentrations were measured repeatedly during follow-up.
+A hypothetical, randomised, placebo-controlled trial enrolled **120 adult women**, randomly assigned to receive **sertraline (SSRI; n = 60)** or **placebo (n = 60)**. The planned study period was approximately 13 weeks. Depressive symptoms, menstrual-cycle phase, and circulating estradiol concentrations were measured repeatedly during this period.
 
 ## Participants
 
@@ -40,4 +40,11 @@ The study included 120 randomised participants, with 60 assigned to each group. 
 
 Baseline characteristics are presented in Table 1.
 
-![Table 1. Participant characteristics by randomised group](figures/baseline_characteristics.html)
+<!-- The baseline table is an HTML file, not an image. Include it as an iframe. -->
+<iframe src="figures/baseline_characteristics.html" width="100%" height="620" style="border: 0;" title="Table 1. Participant characteristics by randomised group"></iframe>
+
+## Depressive symptom severity over time
+
+Mean MADRS and PHQ-9 scores decreased across the study period in both treatment groups (@fig-symptom-severity). During weeks 8–13, mean MADRS scores were 16.2 in the sertraline group and 18.5 in the placebo group. Mean PHQ-9 scores were 8.8 and 9.9, respectively. 
+
+![Mean MADRS (left) and PHQ-9 (right) scores across study period in the sertraline and placebo groups. Points show group means and error bars indicate approximate 95% confidence intervals.](figures/madrs_phq9_scores_side_by_side.png){#fig-symptom-severity width=100%}
