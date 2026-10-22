@@ -5,7 +5,7 @@ For this course, I used ChatGPT to generate an imaginary dataset to investigate 
 
 *Overview of the repository*
 
-This repository contains R scripts for data cleaning, statistical analysis, and visualisation of simulated data from a fictional study investigating antidepressant treatment effectiveness. The dataset was not generated using a single prompt but through an ongoing back and forth with ChatGPT. Therefore, I'm unable to provide a prompt or seed for the dataset. 
+This repository contains R scripts for data cleaning, statistical analysis, and visualisation of simulated data. The dataset was not generated using a single prompt but through an extensive back and forth with GPT-6 (https://chatgpt.com/) resulting in many revisions. Therefore, I'm unable to provide a prompt or seed for the dataset. 
 
 The repository is organised as follows:
 
