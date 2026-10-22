@@ -9,31 +9,30 @@ This repository contains R scripts for data cleaning, statistical analysis, and 
 
 The repository is organised as follows:
 
+```text
 K8F6106-2026/
 │
 ├── analysis/                         # Data processing and analysis
 │   │
 │   ├── DEPENDENCIES.md               # Required software and R packages
-│   ├── clean_data.R                  # Data exploration and cleaning
-│   ├── joined_datasets.R             # Combines cleaned datasets
+│   ├── clean_data.R                  # Data cleaning
+│   ├── joined_datasets.R             # Combining datasets
 │   ├── main_analysis.R               # Main statistical analysis
-│   ├── main_analysis_figures.R       # Visualisation of model results
-│   ├── summary_stats_table           # Participant summary statistics
+│   ├── main_analysis_figures.R       # Visualisation of results
+│   ├── summary_stats_table           # Summary statistics
 │   │
 │   └── menstrualcycle_MADRS/         # Menstrual-cycle analyses
 │       ├── menstrualcycle_MADRS_lmer.R
-│       │                             # Linear mixed-effects model
 │       ├── menstrualcycle_MADRS_pairwise.R
-│       │                             # Pairwise phase comparisons
 │       └── menstrualcycle_MADRS_figure.R
-│                                     # Visualisation of MADRS by phase
 │
 ├── report/                           # Research report
-│   ├── report.qmd                     # Quarto report source
+│   ├── report.qmd                     # Quarto source file
 │   └── report.html                    # Rendered HTML report
 │
-├── .gitignore                        # Files excluded from version control
-├── README.md                         # Project description and documentation
+├── .gitignore                        # Files ignored by Git
+├── README.md                         # Project documentation
 └── flowchart.drawio                   # Project flowchart
+```
 
-Note: The data/ folder contains the simulated datasets used in the analyses but is excluded from version control using .gitignore.
+**Note:** The `data/` folder contains the simulated datasets used in the analyses but is excluded from version control using `.gitignore`.
