@@ -1,17 +1,18 @@
-# ==============================================================
+# ======================================================================
 # Side-by-side MADRS and PHQ-9 figures for the Quarto report
-# ============================================================== 
+# CAN ONLY BE RUN AFTER RUNNING THE (...)_figure.R scripts in this folder
+# ======================================================================
 
-# Reuse the plots created by the existing MADRS analysis.
+# 1. Reuse the plots created by the existing MADRS & PHQ9 analysis scripts
 source("analysis/MADRS_PHQ9_over_time/MADRS_over_time_groups.R")
 madrs_scores <- plot_scores
 madrs_improvement <- plot_improvement
 
-# Reuse the matching plots from the PHQ-9 analysis.
 source("analysis/MADRS_PHQ9_over_time/PHQ9_over_time_groups.R")
 phq9_scores <- plot_phq9_scores
 phq9_improvement <- plot_phq9_improvement
 
+# 2. Changes to labels
 # Shorten x-axis labels
 week_labels <- c(
   "Weeks 0–4" = "0–4",
@@ -35,7 +36,7 @@ phq9_scores <- phq9_scores +
   ) +
   scale_x_discrete(labels = week_labels)
 
-# Combine both plots
+# 3. Combine plots using patchwork
 combined_scores <- patchwork::wrap_plots(
   madrs_scores,
   phq9_scores,
@@ -53,7 +54,7 @@ combined_scores <- patchwork::wrap_plots(
 # Display
 print(combined_scores)
 
-# Save
+# 4. Save
 ggsave(
   "report/figures/madrs_phq9_scores_side_by_side.png",
   combined_scores,
