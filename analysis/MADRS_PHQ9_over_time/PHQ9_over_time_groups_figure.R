@@ -1,3 +1,9 @@
+# ==============================================================
+# PHQ9 improvement over time: sertraline versus placebo visualisation
+# Uses the cleaned data joined by analysis/joined_datasets.R
+# RUN PHQ9_over_time_groups.R FIRST
+# ==============================================================
+
 # 1. PHQ-9 mean symptom severity by period (95% CI error bars).
 plot_phq9_scores <- ggplot(
   phq9_summary,

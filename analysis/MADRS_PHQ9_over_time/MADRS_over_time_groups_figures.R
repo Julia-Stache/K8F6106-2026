@@ -1,7 +1,7 @@
 # ==============================================================
-# MADRS improvement over time: sertraline versus placebo
+# MADRS improvement over time: sertraline versus placebo visualisation
 # Uses the cleaned data joined by analysis/joined_datasets.R
-# Visualisation 
+# RUN MADRS_over_time_groups.R FIRST
 # ==============================================================
 
 # 1. Plot and save a figure showing average MADRS severity over time.
