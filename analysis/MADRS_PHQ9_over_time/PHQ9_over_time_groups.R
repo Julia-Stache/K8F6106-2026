@@ -3,8 +3,7 @@
 # Run from the project root (containing analysis/, data/, report/).
 # ==============================================================
 
-# This script creates repeated_measurements_data, including baseline_phq9
-# and visit_period (Weeks 0–4, Weeks 4–8, Weeks 8–13).
+# Run from the project root (the folder containing analysis/ and data/).
 source("analysis/prep_data_for_analysis/joined_datasets.R")
 
 # 1. One PHQ-9 average for each participant in each follow-up period.

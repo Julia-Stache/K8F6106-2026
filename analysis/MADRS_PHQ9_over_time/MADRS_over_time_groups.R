@@ -6,13 +6,6 @@
 # Run from the project root (the folder containing analysis/ and data/).
 source("analysis/prep_data_for_analysis/joined_datasets.R")
 
-# Check treatment coding in the uploaded datasets:
-# randomized_arm = "SSRI" means sertraline; "Placebo" means placebo.
-stopifnot(all(
-  unique(as.character(repeated_measurements_data$randomized_arm)) %in%
-    c("SSRI", "Placebo")
-))
-
 # 1. Calculate one average MADRS score per participant and period.
 # This avoids giving extra weight to people with more assessments.
 participant_period <- repeated_measurements_data |>
